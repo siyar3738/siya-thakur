@@ -2,34 +2,31 @@
 <html>
 <head>
   <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
+
 <body>
 
-<h2>Currency Converter</h2>
+<div class="container">
+  <h2>Currency Converter</h2>
 
-<!-- FROM -->
-<div>
-  <select id="from"></select>
-  <img id="fromFlag" src="https://flagsapi.com/US/flat/64.png">
+  <div class="row">
+    <select id="from"></select>
+    <img id="fromFlag" src="https://flagsapi.com/US/flat/64.png">
+  </div>
+
+  <div class="row">
+    <select id="to"></select>
+    <img id="toFlag" src="https://flagsapi.com/IN/flat/64.png">
+  </div>
+
+  <input type="number" id="amount" placeholder="Enter amount">
+
+  <button onclick="convert()">Convert</button>
+
+  <p id="result"></p>
 </div>
 
-<!-- TO -->
-<div>
-  <select id="to"></select>
-  <img id="toFlag" src="https://flagsapi.com/IN/flat/64.png">
-</div>
-
-<!-- AMOUNT -->
-<input type="number" id="amount" placeholder="Enter amount">
-
-<!-- BUTTON -->
-<button onclick="convert()">Convert</button>
-
-<!-- RESULT -->
-<p id="result"></p>
-
-<!-- LINK JS -->
 <script src="script.js"></script>
 
 </body>

@@ -1,54 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND (VISIBLE + SOFT) */
 body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: Arial, sans-serif;
-  background: #f0f2f5;
+  background: #70c5f2;   /* soft blue-grey (VISIBLE) */
+}
+
+/* MAIN BOX */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
   text-align: center;
-  margin-top: 50px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
+/* TITLE */
 h2 {
-  color: #333;
+  margin-bottom: 20px;
 }
 
-div {
-  margin: 15px;
+/* ROW */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
 }
 
-select {
-  padding: 8px;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-img {
-  vertical-align: middle;
-  border-radius: 5px;
-}
-
-input {
+/* INPUTS */
+select, input {
   padding: 10px;
-  font-size: 16px;
-  width: 200px;
-  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
+/* FULL INPUT */
+input {
+  width: 100%;
+}
+
+/* FLAG */
+img {
+  width: 40px;
+}
+
+/* BUTTON */
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  width: 100%;
+  padding: 12px;
   margin-top: 15px;
-  background: #007bff;
+
+  background: #6c8fbf;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+
   cursor: pointer;
 }
 
 button:hover {
-  background: #0056b3;
+  background: #5676a8;
 }
 
+/* RESULT */
 #result {
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: 15px;
   font-weight: bold;
-  color: #222;
 }
